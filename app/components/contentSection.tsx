@@ -10,7 +10,7 @@ export default function TableOfContents() {
             {/* Background elements - these will stretch across the entire viewport if the parent page allows it */}
             <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-blue-600/20 opacity-10" />
             <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+                <div className="absolute inset-0 bg-[url('/taurzon5_web/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
             </div>
 
             {/* Fixed Table of Contents on the RIGHT side, centered vertically */}
