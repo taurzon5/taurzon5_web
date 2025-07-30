@@ -1,13 +1,23 @@
 const nextConfig = {
   output: 'export',
   reactStrictMode: true,
-  basePath: '/taurzon5_web',
-  assetPrefix: '/taurzon5_web/',
+  basePath: process.env.NODE_ENV === 'production' ? '/taurzon5_web' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/taurzon5_web/' : '',
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
-  webpack: (config, { isServer }) => {
+  webpack: (
+    config,
+    {
+      buildId,
+      dev,
+      isForcibleStaticBuild,
+      isServer,
+      nextRuntime,
+      webpack,
+    }
+  ) => {
     config.module.rules.push({
       test: /\.pdf$/,
       type: 'asset/resource',
