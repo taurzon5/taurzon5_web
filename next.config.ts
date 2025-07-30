@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  basePath: '/taurzon5_web',
-  assettPrefix: '/taurzon5_web',
+  basePath: "/taurzon5_web",
+  assettPrefix: "/taurzon5_web",
   images: {
     unoptimized: true,
   },
