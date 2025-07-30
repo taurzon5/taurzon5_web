@@ -46,9 +46,10 @@ export default function ContactSection() {
 							</motion.a>
 							<p className="text-green-500 mt-8 mb-2">$ cat resume.pdf</p>
 							<motion.a
-								href="public/Resume.pdf" class="image fit"
-								target="_blank"
-								rel="noopener noreferrer"
+								href="/Resume.pdf"
+    								alt="alt text"
+    								target="_blank"
+    								rel="noopener noreferrer"
 								whileHover={{ scale: 1.02 }}
 								className="inline-flex items-center gap-2 px-6 py-3 bg-green-500/10 text-green-400 rounded-lg border border-green-500/20 hover:bg-green-500/20 transition-colors"
 							>
