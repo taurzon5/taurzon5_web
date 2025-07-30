@@ -9,18 +9,15 @@ const nextConfig = {
   trailingSlash: true, // Often helpful for static exports
   output: "export",
   reactStrictMode: true,
-  webpack: (config) => {
+  webpack: (config, { isServer }) => {
+    // Add a rule to handle PDF files
     config.module.rules.push({
       test: /\.pdf$/,
-      use: {
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[ext]',
-        },
-      },
-    });
-    return config;
-  }
+      type: 'asset/resource', // Webpack 5 way to handle assets directly
+      generator: {
+        filename: 'static/media/[name].[hash][ext]', // Output path for the PDF
+      }
+  },
 };
 
 module.exports = nextConfig;
