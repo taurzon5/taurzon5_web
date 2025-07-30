@@ -2,12 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  output: "export",
+  basePath: "/taurzon5_web",
+  output: "export",
+  reactStrictMode: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
 
-// next.config.js
-module.exports = {
-  // ... rest of the configuration.
-  output: "standalone",
-};
