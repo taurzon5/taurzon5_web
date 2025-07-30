@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: "export",
   basePath: "/taurzon5_web",
   output: "export",
   reactStrictMode: true,
