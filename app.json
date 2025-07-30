@@ -1,0 +1,15 @@
+{
+  "name": "taurzon5Web",
+  "options": {
+    "allow-unauthenticated": false,
+    "memory": "256Mi",
+    "cpu": "1",
+    "port": 9000,
+    "http2": false
+  }
+  "scripts": {
+    "dev": "next dev -p 4000",
+    "build": "next build",
+    "start": "next start"
+      }
+}
